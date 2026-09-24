@@ -1,6 +1,6 @@
 # ml-foundations
 
-A Python-based study project aimed on ml powered by Jupyter Notebooks and managed with **uv**.
+A Python-based study project for learning ML powered by Jupyter Notebooks and managed with **uv**.
 
 ## Features
 * **Fast Dependency Management**: Built using `uv` for lightning-fast installation and reproducible environments.
