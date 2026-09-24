@@ -30,5 +30,6 @@ dev = [
 [tool.mypy]
 strict = true
 
-[tool.ruff.lint]
-select = ["ALL"]
+[tool.ruff]
+# Игнорируем требование обязательного копирайта во всех файлах
+lint.ignore = ["CPY001","D203","D213", "COM812"]

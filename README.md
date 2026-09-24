@@ -1,6 +1,6 @@
-# ml-foundation
+# ml-foundations
 
-A Python-based data analysis and research project powered by Jupyter Notebooks and managed with **uv**.
+A Python-based study project aimed on ml powered by Jupyter Notebooks and managed with **uv**.
 
 ## Features
 * **Fast Dependency Management**: Built using `uv` for lightning-fast installation and reproducible environments.
@@ -13,10 +13,10 @@ Before running the project, ensure you have `uv` installed. If you don't have it
 
 ```bash
 # macOS/Linux
-curl -LsSf https://astral.sh | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Windows
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh | iex"
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 ## Getting Started
@@ -25,8 +25,8 @@ Follow these steps to clone the repository, set up the environment, and launch t
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com
-cd your-repo-name
+git clone https://github.com/miroshnichenkoai/ml-foundations.git
+cd ml-foundations
 ```
 
 ### 2. Install Dependencies
