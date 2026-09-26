@@ -1,7 +1,7 @@
 """LeetCode 1. Two Sum.
 
 https://leetcode.com/problems/two-sum
-Time: O(n^2).
+Time: O(n).
 Memory: O(1).
 Technique: iteration through two lists.
 Solved: on my own.
@@ -10,8 +10,10 @@ Solved: on my own.
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        for i in range(0, len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
+        d : dict[int, int] = {k: i for i, k in enumerate(nums)}
+
+        for i, k in enumerate(nums):
+            index = d.get(target - k)
+            if index is not None and index != i:
+                return [index, i]
         return []

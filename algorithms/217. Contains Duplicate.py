@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/contains-duplicate
 Time: O(n), make set from list.
-Memory: O(1).
+Memory: O(n).
 Technique: comparison set len with dict len.
 Solved: on my own.
 """

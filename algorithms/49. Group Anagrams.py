@@ -1,7 +1,7 @@
 """LeetCode 49. Group Anagrams.
 
 https://leetcode.com/problems/group-anagrams
-Time: O(n log n), go through every element and sort string
+Time: O(n klogk), go through every element and sort string
 Memory: O(n), only two indices.
 Technique: memorizing of sorted str with its index in other list.
 Solved: on my own.

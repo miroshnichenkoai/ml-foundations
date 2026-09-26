@@ -32,12 +32,18 @@ strict = true
 
 [tool.ruff.lint]
 select = ["ALL"]
-
-[tool.ruff]
 ignore = [
-    "CPY001",  # Missing copyright notice: Explicit copyright is misleading in an open-source project and conflicts with the public LICENSE file.
-    "D203",    # 1 blank line required before class docstring: Disabled to adhere to the alternative 'D211' (no blank lines), avoiding conflicting docstring styles.
-    "D213",    # Multi-line docstring summary should start at the second line: Disabled in favor of 'D212' (summary on the first line) for more compact docstrings.
-    "COM812",  # Missing trailing comma: Disabled because it conflicts with the Ruff formatter, which handles trailing commas automatically.
+    "CPY001", # Missing copyright notice: Explicit copyright is misleading in an open-source project and conflicts with the public LICENSE file.
+    "D203", # 1 blank line required before class docstring: Disabled to adhere to the alternative 'D211' (no blank lines), avoiding conflicting docstring styles.
+    "D213", # Multi-line docstring summary should start at the second line: Disabled in favor of 'D212' (summary on the first line) for more compact docstrings.
+    "COM812", # Missing trailing comma: Disabled because it conflicts with the Ruff formatter, which handles trailing commas automatically.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"algorithms/**/*" = [
+    "D101",   # Missing docstring in public class
+    "D102",   # Missing docstring in public method
+    "N802",   # Function name should be lowercase (часто нужно для LeetCode)
+    "INP001", # File is part of an implicit namespace package
 ]
 

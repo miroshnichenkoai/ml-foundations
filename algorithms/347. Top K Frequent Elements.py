@@ -2,17 +2,14 @@
 
 https://leetcode.com/problems/top-k-frequent-elements
 Time: O(n).
-Memory: O(n).
+Memory: O(nlogk).
 Technique: count most common int.
 Solved: on my own.
 """
 
+from collections import Counter
+
 
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
-        res: list[int] = []
-
-        for v in Counter(nums).most_common(k):
-            res.append(v[0])
-
-        return res
+        return [v[0] for v in Counter(nums).most_common(k)]
