@@ -2,8 +2,8 @@
 
 https://leetcode.com/problems/two-sum
 Time: O(n).
-Memory: O(1).
-Technique: iteration through two lists.
+Memory: O(n).
+Technique: hash map.
 Solved: on my own.
 """
 

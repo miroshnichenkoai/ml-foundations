@@ -1,8 +1,8 @@
 """LeetCode 347. Top K Frequent Elements.
 
 https://leetcode.com/problems/top-k-frequent-elements
-Time: O(n).
-Memory: O(nlogk).
+Time: O(nlogk)  .
+Memory: O(n).
 Technique: count most common int.
 Solved: on my own.
 """
